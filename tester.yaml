@@ -1,0 +1,10 @@
+---
+- name: Test the MongoDB Ops Manager playbook
+#  connection: localhost
+  hosts: all
+  
+  roles:
+    - common
+    - create-group-by-name
+    - get-automation-agent-config
+

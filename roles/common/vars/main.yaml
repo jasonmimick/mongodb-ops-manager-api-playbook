@@ -1,0 +1,29 @@
+#    mongodb_cluster_name: {{ cluster_name }}
+#    mongodb_version: {{ mongodb_version }}
+#    mongodb_port: {{ mongodb_port }}
+#    replica_set_nodes: {{ nodes_per_replicaset }}
+#    mms_base_url: {{ mms_base_url }}
+#    mms_api_path: "/api/public/v1.0"
+#    mms_api_url: "{{ mms_base_url }}{{ mms_api_path }}"
+#    mms_user: {{ mms_user }}
+#    mms_user_apikey: {{ mms_agent_apikey }}
+#    mms_new_organization_basename: {{ mms_new_organization_basename }}
+#    mms_new_project_basename: {{ mms_new_project_basename }}
+#    # If blank generate new?
+#    mms_target_organization: {{ mms_target_org }}
+#    mms_target_project: {{ mms_target_project }}
+
+mms_api_timeout: 20
+mongodb_cluster_name: "biglog"
+mongodb_version: "3.6.0"
+mongodb_port: "38910"
+replica_set_nodes: 3
+mms_base_uri: "http://192.168.65.1:8888"
+mms_api_path: "/api/public/v1.0"
+mms_api_uri: "{{ mms_base_uri }}{{ mms_api_path }}"
+mms_user: "jason.mimick@mongodb.com"
+mms_user_apikey: "a0688ac3-7159-4a0f-b5b4-1282df96d492"
+mms_default_orgId: "5a30b430a1e87d0a8b901c88"
+mms_project_name: "fee"
+    
+
