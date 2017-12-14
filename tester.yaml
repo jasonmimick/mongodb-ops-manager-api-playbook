@@ -7,4 +7,5 @@
     - common
     - create-group-by-name
     - get-automation-agent-config
+    - add-replica-set
 

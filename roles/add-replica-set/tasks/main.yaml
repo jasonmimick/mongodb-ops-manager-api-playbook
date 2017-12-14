@@ -1,0 +1,11 @@
+
+- name: add replica set
+  add_replica_set:
+    cluster_name: "{{ mongodb_cluster_name }}"  
+    automation_config: "{{ automation_config.json }}"
+    replica_set_nodes: "{{ replica_set_nodes }}"
+  register: add_replica_set_response
+
+- debug:
+    msg: "add_replica_set_response={{ add_replica_set_response }}"
+
